@@ -59,6 +59,7 @@ def help():
     print("Commands")
     print("add - Add a task to the list.")
     print("rm | remove - Remove a task from the list.")
+    print("ls | list - List the tasks")
     print("r | replace - Replace a task on the list.")
     print("q | quit - Quit.")
     print("h | help - Help.")
