@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Weather
 
@@ -15,15 +17,13 @@ API_KEY: str | None = os.getenv("API_KEY")
 GEOCODE_URL: str = (
     "https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={api_key}"
 )
-WEATHER_URL: str = (
-    "https://weather.googleapis.com/v1/currentConditions:lookup?"
-    "key={api_key}&location.latitude={lat}&location.longitude={lng}"
-)
+
+WEATHER_URL: str = "https://weather.googleapis.com/v1/currentConditions:lookup?key={api_key}&location.latitude={lat}&location.longitude={lng}"
 
 INVALID_INDEX_MESSAGE: str = "Invalid index."
 INDEX_OUT_OF_RANGE_MESSAGE: str = "Index out of range."
 LATITUDE_MESSAGE: str = "Latitude: {lat} Degrees"
-LONGITUDE_MESSAGE: str = "Latitude: {lng} Degrees"
+LONGITUDE_MESSAGE: str = "Longitude: {lng} Degrees"
 FAILED_REQUEST_MESSAGE: str = "Request failed with status code: {status_code}"
 ADDRESS_DOES_NOT_EXIST_MESSAGE: str = "Address does not exist."
 TIME_MESSAGE = "Time: {time}"
